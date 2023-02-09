@@ -27,7 +27,7 @@
             <input class="btn btn-warning px-5" type="submit" value="Submit">
         </div>
         <div class="mt-1 text-center ms-5">
-            <a href={{route('register')}}>Don't have an account? Click here to sign up</a>
+            <a href={{route('register')}}>{{__("msg.Don't have an account? Click here to sign up")}}</a>
         </div>
     </form>
 </div>

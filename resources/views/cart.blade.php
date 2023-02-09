@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="ms-5 mt-4">
-    <h3 class="text-decoration-underline" style="margin-left: 22.5%;">Cart</h3>
+    <h3 class="text-decoration-underline" style="margin-left: 22.5%;">{{__('msg.Cart')}}</h3>
     @foreach ($carts as $cart)
     <form action={{ route('deleteCart', [$cart->id]) }} method="POST">
         @csrf

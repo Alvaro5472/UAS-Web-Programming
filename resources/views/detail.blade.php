@@ -7,10 +7,10 @@
         <img src="{{asset($details->image)}}" alt="">
     </div>
     <div class="mx-5 mt-5">
-        <p class="fw-bold">Price Rp. {{number_format($details->price)}}</p>
-        <p>LIMITED VEGETABLE!</p>
+        <p class="fw-bold">{{__('msg.Price')}} Rp. {{number_format($details->price)}}</p>
+        <p>{{__('msg.LIMITED VEGETABLE!')}}</p>
         <p>{{$details->item_desc}}</p>
-        <p>Notes: This vegetable won 1st place at Canada UK National Giant Vegetables Championship.</p>
+        <p>{{__('msg.Notes: This vegetable won 1st place at Canada UK National Giant Vegetables Championship.')}}</p>
     </div>
 </div>
 <div class="d-flex justify-content-end mt-5" style="margin-right: 25%;">

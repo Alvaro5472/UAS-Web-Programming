@@ -7,7 +7,7 @@
         <img src="{{asset($products->image)}}" class="card-img-top" alt="...">
         <div class="card-body text-center">
             <h5>{{$products->item_name}}</h5>
-            <a class="fs-5" href={{route('details', [$products->id])}}>Detail</a>
+            <a class="fs-5" href={{route('details', [$products->id])}}>{{__('msg.Detail')}}</a>
         </div>
     </div>
     @endforeach

@@ -10,8 +10,8 @@
 <body>
     @include('layout.navbarWelcome')
     <div class="text-center mx-auto mt-3" style="border:10px solid rgb(250,220,84); padding-top: 225px;font-size: 40px; border-radius: 50%; width: 550px; height: 550px;">
-        <p class="align-middle">Find and Buy Your Grocery</p>
-        <p>Here!</p>
+        <p class="align-middle">{{__('msg.Find and Buy Your Grocery')}}</p>
+        <p>{{__('msg.Here!')}}!</p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

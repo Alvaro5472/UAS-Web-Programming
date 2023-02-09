@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="mb-4">
-                <span style="padding-left: 10px; margin-right: 30px;">Gender</span>
+                <span style="padding-left: 10px; margin-right: 30px;">{{__('msg.Gender')}}</span>
                 @foreach ($gender as $g)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="gender_id" id="inlineRadio1" value={{$g->id}}>
@@ -67,7 +67,7 @@
             <div class="mb-3">
                 <div class="mb-3">
                     <div class="input-group mb-3" style="height: 60px;">
-                        <label class="input-group-text" for="inputGroupSelect01">Role</label>
+                        <label class="input-group-text" for="inputGroupSelect01">{{__('msg.Role')}}</label>
                         <select name="role_id" class="form-select" id="inputGroupSelect01">
                             <option selected>{{$accountData->role->role_name}}</option>
                         </select>
@@ -81,7 +81,7 @@
             </div>
             <div class="mb-4">
                 <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupFile02">Display Picture</label>
+                    <label class="input-group-text" for="inputGroupFile02">{{__('msg.Display Picture')}}</label>
                     <input name="display_picture_link" type="file" class="form-control" id="inputGroupFile02">
                     @error('display_picture_link')
                     <div class="text-danger mt-2">
